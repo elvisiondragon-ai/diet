@@ -208,7 +208,7 @@ const Home = () => {
                 onClick={scrollToPricing}
                 className="bg-[var(--gradient-cta)] hover:opacity-90 shadow-[var(--shadow-cta)] text-lg px-8 py-6 group"
               >
-                Dapatkan Sekarang - Rp 100.000
+                Dapatkan Sekarang - Rp 200.000
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
@@ -729,7 +729,7 @@ const Home = () => {
                 <h3 className="text-2xl font-bold">Paket Lengkap E-book + Audio</h3>
                 <div className="space-y-2">
                   <div className="text-black/80 text-lg line-through">Rp 300.000</div>
-                  <div className="text-5xl md:text-6xl font-bold">Rp 100.000</div>
+                  <div className="text-5xl md:text-6xl font-bold">Rp 200.000</div>
                   <div className="text-white/90 text-sm">Hemat 67% - Hanya Bulan Ini</div>
                 </div>
               </div>
