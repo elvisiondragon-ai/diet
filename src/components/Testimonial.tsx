@@ -114,6 +114,19 @@ const Testimonial = () => {
                 </p>
                 <p className="text-center text-sm text-muted-foreground mt-3">— Anna Wijaya</p>
               </div>
+
+              {/* Video Testimony */}
+              <div className="mt-8 text-center">
+                <video 
+                  className="w-full max-w-2xl mx-auto rounded-lg shadow-lg" 
+                  src="https://nlrgdhpmsittuwiiindq.supabase.co/storage/v1/object/public/diet/diet1.mp4" 
+                  controls 
+                  loop 
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
 

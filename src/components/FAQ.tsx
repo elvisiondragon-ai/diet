@@ -82,10 +82,10 @@ const FAQ = () => {
               Pertanyaan lain? Hubungi kami:
             </p>
             <a 
-              href="mailto:support@langsing-abundance.com" 
+              href="mailto:support@elvisiongroup.com" 
               className="text-primary hover:underline font-semibold"
             >
-              support@langsing-abundance.com
+              support@elvisiongroup.com
             </a>
           </div>
         </div>

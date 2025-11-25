@@ -4,19 +4,14 @@ import { Check, Clock, Shield, Zap, ArrowRight } from "lucide-react";
 const Pricing = () => {
   const features = [
     "5 Bab Komprehensif (120+ halaman)",
-    "5 Audio Terapi Bawah Sadar",
-    "Worksheet & Tracking Templates",
-    "Quick Reference Guide (1 halaman)",
-    "Studi Kasus Anna (Timeline lengkap)",
+    "Audio Terapi Bawah Sadar",
+    "Studi Kasus (Timeline lengkap)",
     "Akses Selamanya (Lifetime Access)",
-    "Update Gratis untuk edisi baru",
     "Garansi Uang Kembali 30 Hari"
   ];
 
   const handleCTA = () => {
-    // In production, this would redirect to your payment/checkout page
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    alert("Redirect ke halaman pembayaran (integrate dengan payment gateway Anda)");
+    window.location.href = 'https://app.elvisiongroup.com/diet';
   };
 
   return (
@@ -92,20 +87,30 @@ const Pricing = () => {
               </div>
 
               {/* CTA Button */}
-              <Button 
-                size="lg" 
-                onClick={handleCTA}
-                className="w-full bg-[var(--gradient-cta)] hover:opacity-90 shadow-[var(--shadow-cta)] text-lg py-6 group"
-              >
-                Ya, Saya Mau Langsing Tanpa Penderitaan!
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  size="lg" 
+                  onClick={handleCTA}
+                  className="w-full bg-[var(--gradient-cta)] hover:opacity-90 shadow-[var(--shadow-cta)] text-lg py-6 group"
+                >
+                  Ya, Saya Mau Langsing Tanpa Penderitaan!
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+                <Button 
+                  size="lg" 
+                  onClick={handleCTA}
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-md text-lg py-6 group"
+                >
+                  Checkout
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
 
               {/* Guarantee */}
               <div className="bg-muted/50 rounded-xl p-4 text-center">
                 <p className="text-sm text-foreground">
                   <strong className="text-primary">💯 Garansi 100% Bebas Risiko:</strong>
-                  {" "}Jika dalam 30 hari Anda merasa metode ini tidak cocok, 
+                  {" "}Jika dalam 30 hari Anda merasa metode ini tidak berguna setelah melakukan, 
                   kami kembalikan uang Anda tanpa pertanyaan.
                 </p>
               </div>

@@ -101,6 +101,15 @@ const Solution = () => {
               </div>
             </div>
           </div>
+          
+          {/* Audio Sample */}
+          <div className="text-center space-y-4">
+            <h3 className="text-2xl font-bold text-foreground">Sample Diet afirmasi</h3>
+            <audio controls autoPlay>
+              <source src="https://nlrgdhpmsittuwiiindq.supabase.co/storage/v1/object/public/diet/samplediet.MP3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
         </div>
       </div>
     </section>
