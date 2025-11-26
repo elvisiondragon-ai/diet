@@ -203,22 +203,13 @@ const Home = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <Button 
-                size="lg" 
-                onClick={scrollToPricing}
-                className="bg-[var(--gradient-cta)] hover:opacity-90 shadow-[var(--shadow-cta)] text-lg px-8 py-6 group"
-              >
-                Dapatkan Sekarang - Rp 200.000
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                onClick={() => document.getElementById("solution")?.scrollIntoView({ behavior: "smooth" })}
-                className="text-lg px-8 py-6"
-              >
-                Pelajari Metodenya
-              </Button>
+                            <Button
+                              size="lg"
+                              onClick={scrollToPricing}
+                              className="bg-emerald-500 text-white px-8 py-6"
+                            >
+                              Dapatkan Sekarang
+                            </Button>              
             </div>
 
             {/* Trust Badge */}
@@ -293,31 +284,18 @@ const Home = () => {
                 <span className="text-sm font-medium">Solusi Revolusioner</span>
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-                Metode <span className="bg-clip-text text-transparent bg-[var(--gradient-hero)]">Abundance Mental</span>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center">
+                 <span className="bg-clip-text text-transparent bg-[var(--gradient-hero)]">Abundance Mental</span>
               </h2>
               
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Bukan lagi tentang membatasi. Ini tentang <span className="font-semibold text-primary">memprogram ulang identitas</span> Anda menjadi orang yang secara natural ramping dan sehat.
+                Bukan lagi tentang membatasi. Ini tentang <span className="font-semibold text-primary">memprogram ulang identitas</span> Anda menjadi orang yang secara natural ramping dan sehat. Tubuh adalah cerminan mental. Orang ramping bukan karena mereka 'berjuang keras', 
+                    tapi karena identitas bawah sadar mereka adalah <span className="font-semibold text-primary">"Saya adalah orang yang sehat dan ideal"</span>. 
+                    Ebook ini mengajarkan cara mengubah identitas itu.
               </p>
             </div>
 
-            {/* Main Concept */}
-            <div className="bg-card border border-primary/20 rounded-2xl p-8 shadow-[var(--shadow-card)] space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-16 h-16 bg-[var(--gradient-hero)] rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Brain className="w-8 h-8 text-white" />
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-2xl font-bold text-foreground">Konsep Inti: "Mental Mirror"</h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Tubuh adalah cerminan mental. Orang ramping bukan karena mereka 'berjuang keras', 
-                    tapi karena identitas bawah sadar mereka adalah <span className="font-semibold text-primary">"Saya adalah orang yang sehat dan ideal"</span>. 
-                    Ebook ini mengajarkan cara mengubah identitas itu.
-                  </p>
-                </div>
-              </div>
-            </div>
+        
 
             {/* Principles Grid */}
             <div className="grid md:grid-cols-3 gap-6">
@@ -365,14 +343,7 @@ const Home = () => {
               </div>
             </div>
             
-            {/* Audio Sample */}
-            <div className="text-center space-y-4">
-              <h3 className="text-2xl font-bold text-foreground">Sample Diet afirmasi</h3>
-              <audio controls autoPlay>
-                <source src="https://nlrgdhpmsittuwiiindq.supabase.co/storage/v1/object/public/diet/samplediet.MP3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
+
           </div>
         </div>
       </section>
@@ -405,31 +376,11 @@ const Home = () => {
                 </div>
 
                 {/* Audio Player UI */}
-                <div className="bg-muted/50 rounded-xl p-6 space-y-4">
-                  <div className="flex items-center gap-4">
-                    <Button
-                      size="lg"
-                      onClick={handlePlay}
-                      className="w-16 h-16 rounded-full bg-[var(--gradient-hero)] hover:opacity-90 flex items-center justify-center p-0"
-                    >
-                      <Play className={`w-6 h-6 text-white ${isPlaying ? 'animate-pulse' : ''}`} fill="white" />
-                    </Button>
-                    
-                    <div className="flex-1 space-y-2">
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="font-medium text-foreground">Sample Terapi - Identitas Ramping</span>
-                        <span className="text-muted-foreground">2:15</span>
-                      </div>
-                      <div className="w-full h-2 bg-border rounded-full overflow-hidden">
-                        <div className={`h-full bg-[var(--gradient-hero)] transition-all duration-300 ${isPlaying ? 'w-1/3 animate-pulse' : 'w-0'}`} />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Placeholder for actual audio element */}
-                  <audio id="teaser-audio" className="hidden">
-                    <source src="/path-to-your-audio-file.mp3" type="audio/mpeg" />
-                    Browser Anda tidak mendukung audio player.
+                <div className="text-center space-y-4">
+                  <h3 className="text-2xl font-bold text-foreground">Sample Diet afirmasi</h3>
+                  <audio controls autoPlay>
+                    <source src="https://nlrgdhpmsittuwiiindq.supabase.co/storage/v1/object/public/diet/samplediet.MP3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
                   </audio>
                 </div>
 
@@ -540,11 +491,11 @@ const Home = () => {
               <ul className="space-y-3 text-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-accent font-bold">+</span>
-                  <span><strong>5 Audio Terapi</strong> untuk berbagai skenario (tidur, meditasi, workout)</span>
+                  <span><strong>Audio Terapi</strong> untuk berbagai skenario (tidur, meditasi, workout)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent font-bold">+</span>
-                  <span><strong>Worksheet PDF</strong> untuk tracking progress dan journaling</span>
+                  <span><strong>EBOOK</strong> untuk tracking progress dan journaling</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent font-bold">+</span>
@@ -730,7 +681,7 @@ const Home = () => {
                 <div className="space-y-2">
                   <div className="text-black/80 text-lg line-through">Rp 300.000</div>
                   <div className="text-5xl md:text-6xl font-bold">Rp 200.000</div>
-                  <div className="text-white/90 text-sm">Hemat 67% - Hanya Bulan Ini</div>
+                  <div className="text-black/90 text-sm">Hemat - Hanya Bulan Ini</div>
                 </div>
               </div>
 
@@ -777,7 +728,7 @@ const Home = () => {
                   <Button
                     size="lg"
                     onClick={handleCTA}
-                    style={{ background: 'linear-gradient(135deg, hsl(15 80% 60%), hsl(15 85% 55%))' }} className="mt-4 w-full shadow-[var(--shadow-cta)] text-lg py-4"
+                    className="mt-4 w-full bg-emerald-500 text-white text-lg py-4"
                   >
                     Bayar Sekarang
                   </Button>
@@ -874,15 +825,13 @@ const Home = () => {
               <p className="text-lg text-background/80">
                 Bergabunglah dengan ratusan orang yang sudah menemukan kebebasan dari diet yoyo
               </p>
-              <Button 
-                size="lg" 
-                onClick={scrollToPricing}
-                className="bg-[var(--gradient-cta)] hover:opacity-90 shadow-[var(--shadow-cta)] text-lg px-8 py-6 group"
-              >
-                Mulai Transformasi Sekarang
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <p className="text-sm text-background/60 pt-2">
+                            <Button
+                              size="lg"
+                              onClick={scrollToPricing}
+                              className="bg-emerald-500 text-white px-8 py-6"
+                            >
+                              Mulai Transformasi Sekarang
+                            </Button>              <p className="text-sm text-background/60 pt-2">
                 🔒 Pembayaran aman • Akses instant • Garansi 30 hari
               </p>
             </div>
