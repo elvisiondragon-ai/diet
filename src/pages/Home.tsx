@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PixelDiet from "../../PixelDiet";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -907,6 +908,7 @@ const Home = () => {
           </div>
         </div>
       </footer>
+      <PixelDiet />
     </div>
   );
 };
